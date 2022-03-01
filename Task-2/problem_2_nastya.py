@@ -1,0 +1,6 @@
+sizeOfArray = int(input())
+integers_string = input().lstrip().rstrip()
+integers_set = set(list(map(int, integers_string.split())))
+integers_set.discard(0)
+tries = len(integers_set)
+print(tries)
